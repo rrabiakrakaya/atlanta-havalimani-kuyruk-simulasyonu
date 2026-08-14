@@ -13,5 +13,5 @@ Gerçek dünya operasyonlarında hizmet süreleri her zaman standart (üstel) da
 ## 🛠️ Kullanılan Teknolojiler ve Yöntemler
 * **Programlama Dili:** R
 * **Modeller:** M/M/1 ve M/G/1 Kuyruk Modelleri, Pollaczek-Khinchine Formülü
-* **İstatistiksel Yaklaşımlar:** Monte Carlo Simülasyonu, Büyük Sayılar Yasası (LLN) Yakınsaması, Dağılım Uyumu
+* **İstatistiksel Yaklaşımlar:** Monte Carlo Simülasyonu, Büyük Sayılar Yasası Yakınsaması, Dağılım Uyumu
 
