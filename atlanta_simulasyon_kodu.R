@@ -99,7 +99,7 @@ cat("Little Yasası Kontrolü (L = Lambda * W):", round(L, 2), "=", round(lambda
 # ------------------------------------------------------------------------------
 cat("=== 4. MONTE CARLO SİMÜLASYONU (M/G/1) ===\n")
  
-# Tekrarlanabilirlik için seed (Rubrikte zorunlu istenmişti)
+# Analiz sonuçlarının tekrarlanabilirliği için seed ayarlanması
 set.seed(123) 
 N <- 10000 # 10.000 uçaklık simülasyon
  
@@ -143,15 +143,15 @@ cat("Teorik M/M/1 Referans Bekleme Süresi:", round(Wq_dk, 2), "dakika\n")
  
  
 # ------------------------------------------------------------------------------
-# AŞAMA 5: BÜYÜK SAYILAR YASASI (LLN) YAKINSAMA GRAFİĞİ
+# AŞAMA 5: BÜYÜK SAYILAR YASASI YAKINSAMA GRAFİĞİ
 # ------------------------------------------------------------------------------
-cat("\n=== 5. BÜYÜK SAYILAR YASASI (LLN) GRAFİĞİ ÇİZİLİYOR ===\n")
+cat("\n=== 5. BÜYÜK SAYILAR YASASI GRAFİĞİ ÇİZİLİYOR ===\n")
  
 # Her bir adım (N) için kümülatif ortalama bekleme süresini (dakika) hesapla
 kuyruk_sureleri_dk <- wait_times * 60
 kumulatif_ortalama <- cumsum(kuyruk_sureleri_dk) / (1:N)
  
-# Yakınsama (Convergence) Grafiği Çizimi
+# Yakınsama  Grafiği Çizimi
 plot(1:N, kumulatif_ortalama, type="l", col="darkblue", lwd=2,
      main="Büyük Sayılar Yasası: Simülasyonun Yakınsaması (LLN)",
      xlab="Simülasyona Giren Uçak Sayısı (N)", 
